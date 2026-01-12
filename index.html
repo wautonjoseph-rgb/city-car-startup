@@ -11,32 +11,51 @@
       padding: 40px;
       background: #f9fafb;
       color: #111;
+      max-width: 900px;
+      margin: auto;
     }
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      margin-top: 40px;
-    }
+    h1 { font-size: 42px; }
+    h2 { margin-top: 50px; }
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .roles li {
-      margin-bottom: 8px;
+      padding: 24px;
+      border-radius: 14px;
+      margin-top: 24px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
     }
     .cta {
-      margin-top: 40px;
-      padding: 16px 24px;
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 22px;
       background: black;
       color: white;
-      display: inline-block;
       border-radius: 8px;
       text-decoration: none;
+    }
+    .downloads a {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 12px;
+      padding: 12px 18px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
@@ -44,38 +63,72 @@
 
   <h1>The Affordable City Car</h1>
   <p>
-    Building a low-cost, city-first commuter car for modern cities in the USA and EU.
+    Building a low-cost, city-first commuter car for dense urban life in the USA & EU.
+    <br><strong>Currently assembling a founding team (equity-based roles).</strong>
   </p>
 
   <div class="card">
     <h2>🚗 The Problem</h2>
     <p>
-      Cars are too expensive, oversized, and inefficient for dense urban life.
+      Cars are expensive, oversized, and inefficient for city commuting.
     </p>
   </div>
 
   <div class="card">
     <h2>💡 Our Solution</h2>
     <p>
-      A compact, affordable city commuter car built using contract assembly
-      and joint ventures.
+      A compact, affordable city car built through contract assembly and strategic joint ventures.
     </p>
   </div>
 
   <div class="card">
-    <h2>👥 Who We’re Looking For</h2>
-    <ul class="roles">
-      <li>Engineers</li>
-      <li>Designers</li>
-      <li>Marketers</li>
-      <li>Legal Advisors</li>
+    <h2>👥 Open Founding Roles</h2>
+    <ul>
+      <li>Automotive / Mechanical Engineers</li>
+      <li>Industrial & Product Designers</li>
+      <li>Marketing & Growth Leads</li>
+      <li>Legal & Regulatory Advisors</li>
     </ul>
-    <p><strong>Equity-based founding roles.</strong></p>
+    <p><strong>Equity-based founding positions.</strong></p>
   </div>
 
-  <a class="cta" href="mailto:founder@yourcompany.com">
-    Contact the Founder
-  </a>
+  <div class="card">
+    <h2>🧠 Founder</h2>
+    <p>
+      <strong>Joseph Wauton</strong><br>
+      Founder & Strategic Planner
+    </p>
+    <p>
+      Building a practical, affordable mobility solution for cities where most cars
+      are overkill. Focused on execution, partnerships, and long-term value.
+    </p>
+  </div>
+
+  <div class="card downloads">
+    <h2>📄 Documents</h2>
+    <a href="/Low_Cost_City_Car_Business_Plan_USA_EU.pdf" target="_blank">
+      📊 Download Business Plan (PDF)
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>📬 Contact</h2>
+
+    <!-- Free contact form using FormSubmit -->
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <input type="hidden" name="_subject" value="City Car Startup Contact">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="How would you like to get involved?" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2026 Affordable City Car · <a href="/investors.html">Investor Access</a>
+  </footer>
 
 </body>
 </html>
