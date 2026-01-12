@@ -2,184 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ACC — Affordable City Car</title>
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f2f2f2;
       color: #111;
-      margin: 0;
-      padding: 0;
+      line-height: 1.6;
     }
 
-    .container {
-      max-width: 1000px;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 48px;
+      background: #f2f2f2;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 1100px;
       margin: auto;
-      padding: 60px 24px;
+      padding: 96px 24px;
     }
 
-    h1 {
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .hero h1 {
       font-size: 48px;
-      font-weight: 600;
-      margin-bottom: 10px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #444;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin-top: 48px;
     }
 
     h2 {
-      font-size: 28px;
-      margin-top: 60px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #333;
+      font-size: 32px;
+      margin-bottom: 16px;
     }
 
     .card {
-      background: #ffffff;
+      background: white;
       padding: 32px;
-      border-radius: 16px;
-      margin-top: 32px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      border-radius: 12px;
     }
 
-    .logo {
-      font-size: 20px;
-      letter-spacing: 4px;
-      font-weight: 600;
-      margin-bottom: 40px;
-      color: #555;
-    }
-
-    .cta {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 14px 28px;
-      background: #111;
-      color: #fff;
-      border-radius: 30px;
+    .docs a {
+      display: block;
+      margin-bottom: 12px;
+      color: #2563eb;
+      font-weight: 500;
       text-decoration: none;
-      font-size: 16px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 14px;
-      margin-top: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-    }
-
-    button {
-      margin-top: 16px;
-      padding: 14px 24px;
-      background: #111;
-      color: #fff;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 16px;
     }
 
     footer {
-      margin-top: 80px;
+      text-align: center;
+      padding: 48px 24px;
       font-size: 14px;
-      color: #666;
-    }
-
-    a {
-      color: #111;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+<header>
+  <img src="assets/acc-logo.png" alt="ACC Logo" />
+  <nav>
+    <a href="#vision">Vision</a>
+    <a href="#solution">Solution</a>
+    <a href="#team">Team</a>
+    <a href="#docs">Documents</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <div class="logo">ACC</div>
+<section class="hero">
+  <h1>ACC — Affordable City Car</h1>
+  <p>
+    A new kind of urban vehicle designed for simplicity, affordability,
+    and dense city life in the USA and EU.
+  </p>
+</section>
 
-    <h1>Affordable City Car</h1>
-    <p>
-      A city-first, low-cost commuter car designed for modern urban life in the USA & EU.
-      <br><strong>Currently assembling a founding team (equity-based).</strong>
-    </p>
+<section id="vision">
+  <h2>Vision</h2>
+  <p>
+    Cities are becoming denser, more regulated, and more expensive.
+    Yet vehicles continue to grow larger and less practical.
+    ACC exists to reverse that trend.
+  </p>
+</section>
 
+<section id="solution">
+  <h2>The ACC Solution</h2>
+  <div class="grid">
     <div class="card">
-      <h2>The Problem</h2>
-      <p>
-        Most cars are oversized, overpriced, and inefficient for dense city environments.
-      </p>
+      <h3>City-First Design</h3>
+      <p>Compact, efficient, and purpose-built for short urban trips.</p>
     </div>
-
     <div class="card">
-      <h2>The Solution</h2>
-      <p>
-        ACC is a compact, affordable city car built through contract manufacturing and strategic joint ventures —
-        not capital-intensive factories.
-      </p>
+      <h3>Affordability</h3>
+      <p>Design-to-cost from day one to keep ownership accessible.</p>
     </div>
-
     <div class="card">
-      <h2>Founding Roles</h2>
-      <p>
-        We are looking for:
-      </p>
-      <ul>
-        <li>Automotive & Mechanical Engineers</li>
-        <li>Industrial / Vehicle Designers</li>
-        <li>Marketing & Growth Leads</li>
-        <li>Legal & Regulatory Advisors</li>
-      </ul>
-      <p><strong>Equity-based founding positions.</strong></p>
+      <h3>Asset-Light Manufacturing</h3>
+      <p>Contract assembly and joint ventures instead of owning factories.</p>
     </div>
-
-    <div class="card">
-      <h2>Founder</h2>
-      <p>
-        <strong>Joseph Wauton</strong><br>
-        Founder & Strategic Planner
-      </p>
-      <p>
-        Focused on building a practical, scalable mobility company by leveraging partnerships,
-        disciplined execution, and long-term thinking.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Documents</h2>
-      <p>
-        <a href="/Founder_Memo.pdf" target="_blank">📄 Founder Memo</a><br>
-        <a href="/Equity_and_Vesting_Plan.pdf" target="_blank">📄 Equity & Vesting Plan</a><br>
-        <a href="/Founding_Team_Recruitment_Deck.pdf" target="_blank">📄 Recruitment Deck</a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-
-      <form action="https://formsubmit.co/citycarstartup@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="ACC Website Contact">
-        <input type="hidden" name="_captcha" value="false">
-
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" rows="5" placeholder="How would you like to get involved?" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-    <footer>
-      © 2026 ACC — Affordable City Car · <a href="/investors.html">Investor Access</a>
-    </footer>
-
   </div>
+</section>
+
+<section id="team">
+  <h2>Founding Opportunity</h2>
+  <p>
+    ACC is assembling a small, high-caliber founding team aligned through equity
+    and long-term ownership.
+  </p>
+  <ul>
+    <li>Automotive & Mechanical Engineers</li>
+    <li>Vehicle / Industrial Designers</li>
+    <li>Marketing & Growth Leaders</li>
+    <li>Legal & Regulatory Advisors</li>
+  </ul>
+</section>
+
+<section id="docs" class="docs">
+  <h2>Documents</h2>
+  <a href="docs/Founder_Memo_ACC.pdf" target="_blank">Founder Memo</a>
+  <a href="docs/Equity_and_Vesting_Plan_ACC.pdf" target="_blank">Equity & Vesting Plan</a>
+  <a href="docs/Founding_Team_Recruitment_Deck_ACC.pdf" target="_blank">Founding Team Recruitment Deck</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    For partnership, advisory, or founding team discussions:
+  </p>
+  <p><strong>citycarstartup@gmail.com</strong></p>
+</section>
+
+<footer>
+  © 2026 ACC — Affordable City Car
+</footer>
 
 </body>
 </html>
