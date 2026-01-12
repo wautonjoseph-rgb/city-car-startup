@@ -9,12 +9,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+      #contact {
+  background: #000;
+  color: #fff;
+  max-width: none;
+  padding: 120px 24px;
+}
+
+#contact h2,
+#contact p,
+#contact strong {
+  color: #fff;
+}
+
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f2f2f2;
-      color: #111;
-      line-height: 1.6;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  line-height: 1.6;
+
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    }
+    .page-overlay {
+  background: rgba(242, 242, 242, 0.92);
     }
 
     header {
@@ -92,9 +112,12 @@
       font-size: 14px;
       color: #555;
     }
-  </style>
+  </style> 
+</div>
+</body>
 </head>
 <body>
+  <div class="page-overlay">
 
 <header>
   <img src="assets/acc-logo.png" alt="ACC Logo" />
