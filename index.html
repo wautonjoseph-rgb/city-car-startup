@@ -1,202 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACC — Urban Mobility Made Simple</title>
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-      #contact {
-  background: #000;
-  color: #fff;
-  max-width: none;
-  padding: 120px 24px;
-}
-
-#contact h2,
-#contact p,
-#contact strong {
-  color: #fff;
-}
-
-    body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  color: #111;
-  line-height: 1.6;
-
-  background-image: url('assets/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-    }
-    .page-overlay {
-  background: rgba(245, 245, 245, 0.88);
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 24px 48px;
-      background: #f2f2f2;
-    }
-
-    header img {
-      height: 40px;
-    }
-
-    nav a {
-      margin-left: 24px;
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 96px 24px;
-    }
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC - Urban Mobility Made Simple</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }/* Background image */
     .hero {
-      text-align: center;
-      padding-top: 120px;
+        background: url('A_digital_photograph_captures_an_abstract_close-up.png') no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .hero h1 {
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: 16px;
+        font-size: 3rem;
+        margin: 0;
     }
 
     .hero p {
-      font-size: 20px;
-      color: #444;
-      max-width: 700px;
-      margin: auto;
+        font-size: 1.2rem;
+        margin: 10px 0 20px 0;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
-      margin-top: 48px;
+    .hero button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 20px;
+        background-color: #F5F5F5;
     }
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 16px;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .card {
-      background: white;
-      padding: 32px;
-      border-radius: 12px;
+    p, li {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
-    .docs a {
-      display: block;
-      margin-bottom: 12px;
-      color: #2563eb;
-      font-weight: 500;
-      text-decoration: none;
+    ul {
+        max-width: 800px;
+        margin: 0 auto;
+        list-style-type: disc;
+        padding-left: 20px;
     }
 
-    footer {
-      text-align: center;
-      padding: 48px 24px;
-      font-size: 14px;
-      color: #555;
+    /* Black sidebar */
+    .sidebar {
+        background-color: #000;
+        color: #fff;
+        padding: 40px 20px;
     }
-  </style> 
-</div>
-</body>
+
+    .sidebar h2 {
+        color: #fff;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 8px 12px;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .sidebar form input, .sidebar form textarea {
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+    }
+
+    .sidebar form button {
+        background-color: #fff;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    /* Logo */
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 120px;
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
 </head>
-<body>
-  <div class="page-overlay">
+<body><!-- Logo -->
+<img src="A_logo_of_\"ACC,_\"_which_stands_for_Affordable_City_.png" alt="ACC Logo" class="logo">
 
-<header>
-  <img src="assets/acc-logo.png" alt="ACC Logo" />
-  <nav>
-    <a href="#vision">Vision</a>
-    <a href="#solution">Solution</a>
-    <a href="#team">Team</a>
-    <a href="#docs">Documents</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<!-- Hero Section -->
+<div class="hero">
+    <h1>ACC</h1>
+    <p>Urban Mobility Made Simple<br>Affordable, city-focused vehicles designed for modern urban life.</p>
+    <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+</div>
 
-<section class="hero">
-  <h1>ACC — Affordable City Car</h1>
-  <p>
-    A new kind of urban vehicle designed for simplicity, affordability,
-    and dense city life in the USA and EU.
-  </p>
+<!-- About Section -->
+<section id="about">
+    <h2>Who We Are</h2>
+    <p>ACC is an early-stage automotive startup focused on designing affordable, low-cost vehicles for city commuters. We explore smart, asset-light manufacturing models to make urban mobility accessible, practical, and sustainable.</p>
 </section>
 
-<section id="vision">
-  <h2>Vision</h2>
-  <p>
-    Cities are becoming denser, more regulated, and more expensive.
-    Yet vehicles continue to grow larger and less practical.
-    ACC exists to reverse that trend.
-  </p>
+<!-- Approach Section -->
+<section>
+    <h2>How We Build</h2>
+    <ul>
+        <li><strong>Low-Cost Vehicle Architecture:</strong> Innovative designs that reduce production and maintenance costs.</li>
+        <li><strong>Contract Manufacturing & Partnerships:</strong> Working with experienced manufacturers to bring vehicles to life without massive capital.</li>
+        <li><strong>Urban-Focused Design:</strong> Compact, efficient, and built for city streets and daily commuters.</li>
+    </ul>
 </section>
 
-<section id="solution">
-  <h2>The ACC Solution</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>City-First Design</h3>
-      <p>Compact, efficient, and purpose-built for short urban trips.</p>
-    </div>
-    <div class="card">
-      <h3>Affordability</h3>
-      <p>Design-to-cost from day one to keep ownership accessible.</p>
-    </div>
-    <div class="card">
-      <h3>Asset-Light Manufacturing</h3>
-      <p>Contract assembly and joint ventures instead of owning factories.</p>
-    </div>
-  </div>
+<!-- Founders Section -->
+<section>
+    <h2>Meet the Founders</h2>
+    <p>ACC was founded by a small, passionate team exploring new ways to make urban vehicles affordable and practical. We’re currently building the team and refining our concept — focused, realistic, and long-term oriented.</p>
 </section>
 
-<section id="team">
-  <h2>Founding Opportunity</h2>
-  <p>
-    ACC is assembling a small, high-caliber founding team aligned through equity
-    and long-term ownership.
-  </p>
-  <ul>
-    <li>Automotive & Mechanical Engineers</li>
-    <li>Vehicle / Industrial Designers</li>
-    <li>Marketing & Growth Leaders</li>
-    <li>Legal & Regulatory Advisors</li>
-  </ul>
-</section>
+<!-- Sidebar Section for PDFs & Contact -->
+<section class="sidebar">
+    <h2>Founder Documents</h2>
+    <a href="Founder_Memo.pdf" target="_blank">Founder Memo</a>
+    <a href="Equity_and_Vesting_Plan.pdf" target="_blank">Equity & Vesting Plan</a>
+    <a href="Founding_Team_Recruitment_Deck.pdf" target="_blank">Founding Team Recruitment Deck</a>
 
-<section id="docs" class="docs">
-  <h2>Documents</h2>
-  <a href="docs/Founder_Memo_ACC.pdf" target="_blank">Founder Memo</a>
-  <a href="docs/Equity_and_Vesting_Plan_ACC.pdf" target="_blank">Equity & Vesting Plan</a>
-  <a href="docs/Founding_Team_Recruitment_Deck_ACC.pdf" target="_blank">Founding Team Recruitment Deck</a>
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p>Email: citycarstartup@gmail.com</p>
 </section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    For partnership, advisory, or founding team discussions:
-  </p>
-  <p><strong>citycarstartup@gmail.com</strong></p>
-</section>
-
-<footer>
-  © 2026 ACC — Affordable City Car
-</footer>
 
 </body>
 </html>
